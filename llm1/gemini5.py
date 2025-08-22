@@ -1,5 +1,5 @@
 from PIL import Image
-from myllm.myapi import geminiModel
+from llm3.geminiAPI.MyApi import geminiModel
 
 def test():
     img = Image.open("img/img.png")

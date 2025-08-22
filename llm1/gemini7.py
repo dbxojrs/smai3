@@ -3,9 +3,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-from llm1.gemini3 import prompt
-from myllm.myapi import geminiModel
-from myllm.myapi import geminiModel
+from llm3.geminiAPI.MyApi import geminiModel
 def test(prompt, img):
     response = model.generate_content(prompt)
     model = geminiModel()

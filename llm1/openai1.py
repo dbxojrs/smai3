@@ -1,6 +1,6 @@
 from urllib import response
 
-from myllm.myapi import openAiModelArg, makeMsg
+from llm3.geminiAPI.MyApi import openAiModelArg, makeMsg
 
 def test():
         response = openAiModelArg("gpt-4o",

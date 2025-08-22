@@ -1,4 +1,4 @@
-from myllm.myapi import geminiModel
+from llm3.geminiAPI.MyApi import geminiModel
 
 def test(txt):
     model = geminiModel()
