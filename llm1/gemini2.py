@@ -1,10 +1,11 @@
 from PIL import Image
-from llm3.geminiAPI.MyApi import geminiModel
+
+from myllm.MyApi import geminiModel
 
 def test():
-    img = Image.open("img/img.png")
+    img = Image.open("img/dog.png")
     model = geminiModel()
-    response = model.generate_content(["제시한 이미지를 3문장 이내의 한국어로 설명해주세요",img])
+    response = model.generate_content(["제시한 이미지에 있는 강아지와 고양이의 종이 어떤 종이야",img])
     print(response.text)
 
 if __name__ == '__main__':

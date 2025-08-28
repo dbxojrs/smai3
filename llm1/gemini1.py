@@ -1,4 +1,4 @@
-from llm3.geminiAPI.MyApi import geminiModel
+from myllm.MyApi import geminiModel
 
 def test(txt):
     model = geminiModel()
@@ -6,16 +6,14 @@ def test(txt):
     return response.text
 
 if __name__ == '__main__':
-    print("\n--- Gemini 챗봇 시작 ---")
-
     while True:
-        user_message = input("나: ")
-
-        if user_message.lower() == '종료':
+        txt = input(" 질문을 입력 하세요 (q)")
+        if txt == "q":
             break
+        result = test(txt)
+        print(result)
 
-        response_text = test(user_message)
 
-        print("Gemini:", response_text)
 
-    print("--- 챗봇 종료 ---")
+
+

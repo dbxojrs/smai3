@@ -1,6 +1,6 @@
 import urllib
 
-from llm3.geminiAPI.MyApi import openAiModel
+from myllm.MyApi import openAiModelArg, makeMsg, openAiModel
 
 def test(prompt):
     openModel = openAiModel()
